@@ -6,7 +6,12 @@
 
 
 
+/*HR ------------------------------------------*/
 
+hr {
+	width: 1200px;
+	background-color: #000;
+}
 
 
 
@@ -14,31 +19,50 @@
 /*Overlay
 -----------------------------------------------*/
 
-.overlay-image {
+.card {
 	position: relative;
-	width: 100%;
-	border: 1px solid red;
 }
 
-.overlay-image img {
+.card {
 	display: block;
-	width: 100%;
-	height: auto;
 }
 
-.overlay-image .text {
+.card .coins {
 	color: #fff;
-	font-size: 15px;
+	font-size: 20px;
 	text-align: center;
 	position: absolute;
-	top: 10px;
-	left: 20px;
-	opacity: 0;
-	transform: translate(-50%, -50%);
+	top: 3%;
+	left: 10%;
 	width: 100%;
+	opacity: 0;
 }
 
-.overlay-image:hover  .hover{
+.card .dead {
+	color: #000;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	padding-top: 40%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	opacity: 0;
+}
+
+.card-deck .card:hover .coins{
+	/*border: 1px dashed red;*/
 	opacity: 1;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(190,190,190,0.9);
+	width: 80%;
+	border-radius: 8px;
+}
+
+.card:hover .dead {
+	opacity: 1;
+	background-color: rgba(190,190,190,0.8);
+	width: 100%;
+	height: 77%;	
 }
